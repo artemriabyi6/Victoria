@@ -1,5 +1,5 @@
 import images from "../../utils/images";
-
+import './header.css'
 const menuItems = [
   "Новини",
   "Клуб",
@@ -40,7 +40,7 @@ const Header = () => {
                 <ul>
                   {menuItems.map((item, index) => (
                     <li key={index} className="menu-item">
-                      <a>{item}</a>
+                      <a className="category">{item}</a>
                       <div className="dropdown">
                         <ul>
                           <li><a href="#">Пункт 1</a></li>
@@ -53,7 +53,6 @@ const Header = () => {
                 </ul>
               </div>
               <div className="search-tickets">
-                <input type="text" placeholder="Пошук..." />
                 <div className="tickets">
                   <a>Tickets</a>
                 </div>
