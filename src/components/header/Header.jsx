@@ -1,21 +1,39 @@
+import { useState } from "react";
 import images from "../../utils/images";
-import './header.css'
+import "./header.css";
+
 const menuItems = [
-  "Новини",
-  "Клуб",
-  "Команда",
-  "Матчі",
-  "Мультимедіа"
+  "Новини", "Клуб", "Команда", "Матчі", "Мультимедіа"
 ];
 
 const Header = () => {
+  const [selectedLang, setSelectedLang] = useState("ua");
+
+  const handleLangChange = (lang) => {
+    setSelectedLang(lang);
+  };
+
+  const renderFlag = (lang) => {
+    switch (lang) {
+      case "ua":
+        return <p className="lang-text">
+                Українська
+                <img src={images.ua} alt="UA" />
+              </p>;
+      case "en":
+        return <p className="lang-text">
+                Англійська<img src={images.en} alt="EN" />
+                </p>;
+      default:
+        return null;
+    }
+  };
+
   return (
     <header>
       <div className="container">
         <div className="header-wrapper">
-          <a href="">
-            <img src={images.logo} alt="logo" className="logo" />
-          </a>
+          <a href=""><img src={images.logo} alt="logo" className="logo" /></a>
           <div className="header-content">
             <div className="header-top-row">
               <div className="header-top-row-left-block">
@@ -32,7 +50,25 @@ const Header = () => {
                 <div className="partner-logo">
                   <a><img src={images.puma} alt="Puma" /></a>
                 </div>
-                <div className="lang-switch">Lang-switch</div>
+
+                <div className="lang-switch">
+                  <div className="selected-lang">
+                    {renderFlag(selectedLang)}
+                  </div>
+                  <div className="lang-dropdown">
+                    <ul>
+                      <li onClick={() => handleLangChange("ua")}>
+                        <img src={images.ua} alt="UA" />
+                        UA
+                      </li>
+                      <li onClick={() => handleLangChange("en")}>
+                        <img src={images.en} alt="EN" />
+                        EN
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
               </div>
             </div>
             <div className="header-bottom-row">
@@ -54,7 +90,7 @@ const Header = () => {
               </div>
               <div className="search-tickets">
                 <div className="tickets">
-                  <a>Tickets</a>
+                  <a>Квитки</a>
                 </div>
               </div>
             </div>
@@ -66,3 +102,4 @@ const Header = () => {
 };
 
 export default Header;
+

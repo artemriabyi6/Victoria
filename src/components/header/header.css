@@ -250,3 +250,81 @@ header {
     display: flex;
     flex-direction: column;
   }
+
+  .lang-switch {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .selected-lang img {
+    width: 24px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Дропдаун список мов */
+  .lang-switch {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .selected-lang {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .selected-lang img {
+    width: 24px;
+    height: auto;
+  }
+  
+  /* Дропдаун */
+  .lang-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 120px; /* ЗБІЛЬШЕНО */
+  }
+  
+  .lang-dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 4px 0;
+  }
+  
+  .lang-dropdown li {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    gap: 8px;
+  }
+  
+  .lang-dropdown li:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .lang-dropdown li img {
+    width: 20px;
+    height: auto;
+  }
+  
+  /* Hover для показу */
+  .lang-switch:hover .lang-dropdown {
+    display: block;
+  }
+
+  .lang-text {
+    display: flex;
+    gap: 5px;
+  }
