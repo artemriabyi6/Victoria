@@ -1,29 +1,37 @@
 import { useState } from "react";
 import images from "../../utils/images";
+import { useTranslation } from 'react-i18next';
 import "./header.css";
 
 const menuItems = [
-  "Новини", "Клуб", "Команда", "Матчі", "Мультимедіа"
+  "news", "club", "team", "matches", "multimedia"
 ];
 
 const Header = () => {
   const [selectedLang, setSelectedLang] = useState("ua");
+  const { t, i18n } = useTranslation();
 
   const handleLangChange = (lang) => {
     setSelectedLang(lang);
+    i18n.changeLanguage(lang);
   };
 
   const renderFlag = (lang) => {
     switch (lang) {
       case "ua":
-        return <p className="lang-text">
-                Українська
-                <img src={images.ua} alt="UA" />
-              </p>;
+        return (
+          <p className="lang-text">
+            Українська
+            <img src={images.ua} alt="UA" />
+          </p>
+        );
       case "en":
-        return <p className="lang-text">
-                Англійська<img src={images.en} alt="EN" />
-                </p>;
+        return (
+          <p className="lang-text">
+            Англійська
+            <img src={images.en} alt="EN" />
+          </p>
+        );
       default:
         return null;
     }
@@ -44,7 +52,7 @@ const Header = () => {
                 <a className="messanger"><img src={images.twitter} alt="twitter" /></a>
               </div>
               <div className="header-top-row-center-block">
-                <p>З Сумами у серці!</p>
+                <p>{t('slogan')}</p>
               </div>
               <div className="header-top-row-right-block">
                 <div className="partner-logo">
@@ -76,12 +84,12 @@ const Header = () => {
                 <ul>
                   {menuItems.map((item, index) => (
                     <li key={index} className="menu-item">
-                      <a className="category">{item}</a>
+                      <a className="category">{t(item)}</a>
                       <div className="dropdown">
                         <ul>
-                          <li><a href="#">Пункт 1</a></li>
-                          <li><a href="#">Пункт 2</a></li>
-                          <li><a href="#">Пункт 3</a></li>
+                          <li><a href="#">{t('subItem')} 1</a></li>
+                          <li><a href="#">{t('subItem')} 2</a></li>
+                          <li><a href="#">{t('subItem')} 3</a></li>
                         </ul>
                       </div>
                     </li>
@@ -90,7 +98,7 @@ const Header = () => {
               </div>
               <div className="search-tickets">
                 <div className="tickets">
-                  <a>Квитки</a>
+                  <a>{t('tickets')}</a>
                 </div>
               </div>
             </div>
@@ -102,4 +110,3 @@ const Header = () => {
 };
 
 export default Header;
-
