@@ -17,7 +17,7 @@ const Footer = () => {
                             <a href=""><img src={images.facebook} alt="Facebook" /></a>
                         </li>
                         <li>
-                            <a href=""><img src={images.instagram} alt="Facebook" /></a>
+                            <a href="https://www.instagram.com/fc_viktoria_official/" target='_blank'><img src={images.instagram} alt="Facebook" /></a>
                         </li>
                         <li>
                             <a href=""><img src={images.twitter} alt="Facebook" /></a>

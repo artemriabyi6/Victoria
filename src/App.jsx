@@ -6,19 +6,28 @@ import Gallery from './components/gallery/Gallery'
 import TeamSlider from './components/teamSlider/TeamSlider'
 import Footer from './components/footer/Footer'
 import './App.css'
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function App() {
 
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: false, mirror: true });
+
+    AOS.refresh();
+
+  }, []);
 
   return (
     <>
       <Header/>
       <Slider/>
-      <Details/>
-      <News/>
-      <Gallery/>
-      <TeamSlider/>
+      <div data-aos="fade-up"><Details /></div>
+      <div data-aos="fade-up"><News /></div>
+      <div data-aos="fade-up"><Gallery /></div>
+      <div data-aos="fade-up"><TeamSlider /></div>
       <Footer/>
     </>
   )
