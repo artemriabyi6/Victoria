@@ -130,7 +130,7 @@ const TeamSlider = () => {
           return nextIndex;
         }
       });
-    }, 5000); // кожні 5 секунд
+    }, 3000); // кожні 5 секунд
   
     return () => {
       slider.removeEventListener('scroll', handleScroll);
