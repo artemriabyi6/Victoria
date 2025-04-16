@@ -15,7 +15,7 @@ import ua from '../assets/images/ukraine.svg'
 import en from '../assets/images/english.svg'
 import prev  from '../assets/images/arrow-prev.svg'
 import next  from '../assets/images/arrow-next.svg'
-
+import gallery from '../assets/images/gallery.svg'
 
  const images = {
     logo: logo,
@@ -34,7 +34,8 @@ import next  from '../assets/images/arrow-next.svg'
     arrowPrev: prev,
     arrowNext: next,
     ua: ua,
-    en: en
+    en: en,
+    gallery: gallery
 }
 
 export default images

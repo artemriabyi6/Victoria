@@ -1,0 +1,75 @@
+.title-box {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title-box h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.title-box a {
+   color: cornflowerblue;
+   transition: 0.3s ease-in-out;
+}
+.title-box a:hover {
+    color: black;
+ }
+
+.gallery-box {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-box .gallery-card {
+    padding: 10px;
+    width: 276px;
+    gap: 20px;
+    background-color: cornflowerblue;
+    height: 180px;
+    background-image: url(../../assets/images/slide2.jpg);
+    background-position: center;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.gallery-box .gallery-card .icon-length {
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 70px;
+}
+
+.gallery-box .gallery-card .icon-length::before {
+   content: '';
+   background-image: url(../../assets/images/gallery.svg);
+   display: inline-block;
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 18px;
+   height: 18px;
+   margin-right: 10px;
+   position: relative;
+   cursor: pointer;
+   top: 3px;
+   transition: 0.2s ease-in-out;
+   filter: invert();
+}
+.gallery-box .gallery-card .date {
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.gallery-box .gallery-card .gallery-description {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}

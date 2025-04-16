@@ -6,12 +6,16 @@
     overflow: hidden;
     height: 800px;
   }
+  .slider-image {
+    transition: 0.3s ease-in-out;
+  }
   
   .slider-image img {
     width: 100%;
     height: auto;
     display: block;
     border-radius: 4px;
+   
   }
   
   .slider-btn {
