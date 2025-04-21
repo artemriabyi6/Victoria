@@ -1,0 +1,61 @@
+header {
+    margin-bottom: 60px;
+}
+
+.stuff-page-title-box::before {
+    content: "";
+    display: block;
+    position: relative;
+    padding-top: 60px;
+    margin-top: 60px;
+    background: linear-gradient(90deg, #0B0B0C -0.05%, #6E6E78 100.03%);
+    max-width: 1408px;
+    margin: auto;
+    height: 240px;
+}
+
+
+.stuff-page-title-box h1 {
+   text-transform: uppercase;
+   font-weight: 700;
+   color: white;
+   font-size: 35px;
+   margin-bottom: 60px;
+   position: absolute;
+   top: -16%;
+}
+
+.stuff-page-stuff-box {
+    width: 100%;
+    padding: 20px 40px;
+    background-color: white;
+    position: relative;
+    top: -30px;
+}
+
+
+.stuff-page-stuff-box .stuff-page-positions  {
+  margin-bottom: 80px;
+}
+.stuff-page-stuff-box .stuff-page-positions h2 {
+    font-weight: 700;
+    line-height: 140%;
+    font-size: clamp(20px, 7vw, 32px);
+    font-family: "Arsenal";
+    text-align: inherit;
+}
+.stuff-page-stuff-box .stuff-page-positions .stuff-page-player-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0px;
+}
+
+.stuff-page-stuff-box .stuff-page-positions .stuff-page-player-cards .stuff-page-player-card {
+    border: 1px solid cornflowerblue;
+    width: 280px;
+    height: 326px;
+    padding: 20px 10px;
+}
+footer {
+    margin-top: 60px;
+}

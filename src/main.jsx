@@ -4,8 +4,10 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './i18n';
 import './index.css'
-import Calendar from './pages/Calendar.jsx';
+import Calendar from './pages/calendar/Calendar.jsx';
 import HomePage from './pages/HomePage.jsx';
+import Team from './pages/team/Team.jsx'
+import Stuff from './pages/stuff/Stuff.jsx';
 
 
 const router = createBrowserRouter([
@@ -14,8 +16,16 @@ const router = createBrowserRouter([
     element: <HomePage/>,
   },
   {
-    path: '/Calendar',
+    path: '/calendar',
     element: <Calendar/>
+  },
+  {
+    path: "/team",
+    element: <Team/>
+  },
+  {
+    path:'/stuff',
+    element: <Stuff/>
   }
  
 

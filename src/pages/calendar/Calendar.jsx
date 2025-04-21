@@ -1,7 +1,7 @@
-import Header from "../components/header/Header";
-import MatchBox from "../components/matchBox/MatchBox";
-import Footer from "../components/footer/Footer";
-import images from "../utils/images";
+import Header from "../../components/header/Header";
+import MatchBox from "../../components/matchBox/MatchBox";
+import Footer from "../../components/footer/Footer";
+import images from "../../utils/images";
 
 import { useEffect } from 'react';
 import AOS from 'aos';
