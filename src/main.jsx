@@ -8,6 +8,7 @@ import Calendar from './pages/calendar/Calendar.jsx';
 import HomePage from './pages/HomePage.jsx';
 import Team from './pages/team/Team.jsx'
 import Stuff from './pages/stuff/Stuff.jsx';
+import PlayerPage from './pages/playerPage/PlayerPage.jsx';
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path:'/stuff',
     element: <Stuff/>
+  },
+  {
+    path: '/player/:id',
+    element: <PlayerPage/>
   }
  
 

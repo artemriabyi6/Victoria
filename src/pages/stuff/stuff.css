@@ -1,5 +1,9 @@
 header {
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
+}
+
+.stuff-page-title-box {
+    margin-top: 60px;
 }
 
 .stuff-page-title-box::before {

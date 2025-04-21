@@ -20,10 +20,10 @@ const Stuff = () => {
       <section className="stuff-page-title-box">
         <div className="container">
           <h1>Тренерський штаб</h1>
-          <div className="stuff-page-stuff-box">
-          <div className="stuff-page-positions goalkeeper">
+          <div className="stuff-page-stuff-box" data-aos="fade-up">
+          <div className="stuff-page-positions goalkeeper" data-aos="fade-up">
               <h2>Тренерський склад</h2>
-              <div className="stuff-page-player-cards">
+              <div className="stuff-page-player-cards" data-aos="fade-up">
                 <div className="stuff-page-player-card">
                   <div>
                     <h3>Олександр Литвиненко</h3>
@@ -41,7 +41,7 @@ const Stuff = () => {
                 
               </div>
             </div>
-            <div className="stuff-page-positions goalkeeper">
+            <div className="stuff-page-positions goalkeeper" data-aos="fade-up">
               <h2>Адміністративний склад</h2>
               <div className="stuff-page-player-cards">
                 <div className="stuff-page-player-card">

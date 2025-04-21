@@ -1,12 +1,23 @@
 import images from "../../utils/images";
 import './footer.css'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 
 const Footer = () => {
+
+     useEffect(() => {
+        AOS.init({ duration: 500, once: false, mirror: true });
+    
+        AOS.refresh();
+      }, []);
+
     return ( 
         <footer>
             <div className="container">
-            <div className="top-row">
+            <div className="top-row" data-aos="fade-up">
                 <div className="logo-partner">
                     <div className="logo"><img src={images.logo} alt="Logo" /></div>
                     <div className="partner"><img src={images.puma} alt="Puma" /></div>
@@ -31,7 +42,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <div className="bottom-row">
+            <div className="bottom-row" data-aos="fade-up">
                     <ul>
                         <li ><a href="" className="chapter">Meню</a></li>
                         <li><a href="">Новини</a></li>

@@ -17,6 +17,7 @@ import prev  from '../assets/images/arrow-prev.svg'
 import next  from '../assets/images/arrow-next.svg'
 import gallery from '../assets/images/gallery.svg'
 import leagueLogo from '../assets/images/1 ліга.png'
+import player from '../assets/images/player.png'
 
  const images = {
     logo: logo,
@@ -37,7 +38,8 @@ import leagueLogo from '../assets/images/1 ліга.png'
     ua: ua,
     en: en,
     gallery: gallery,
-    leagueLogo: leagueLogo
+    leagueLogo: leagueLogo,
+    player: player
 }
 
 export default images
