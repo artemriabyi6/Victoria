@@ -1,0 +1,37 @@
+.calendar::before {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1408px;
+    position: absolute;
+    display: block;
+    background: linear-gradient(90deg, #0B0B0C -0.05%, #6E6E78 100.03%);
+    height: 384px;
+}
+
+.calendar {
+    margin-bottom: 80px;
+    margin-top: 60px;
+}
+
+.calendar .container {
+    padding-top: 30px ;
+}
+
+.calendar .container .title-match {
+    margin-bottom: 40px;
+}
+
+.calendar .container h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.calendar .container .matches-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 function App() {
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: false, mirror: true });
+    AOS.init({ duration: 1500, once: false, mirror: true });
 
     AOS.refresh();
 

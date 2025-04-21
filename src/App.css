@@ -41,3 +41,14 @@ a {
   padding: 0px 20px
 }
 
+.main-gradient-box {
+  width: 90%;
+  margin: auto;
+  height: 384px;
+  background:  linear-gradient(90deg, #0B0B0C -0.05%, #6E6E78 100.03%);
+  padding-top: 40px;
+  position: relative;
+}
+
+
+

@@ -1,10 +1,27 @@
 import { useState } from "react";
+import DropDown from "../dropDown/DropDown";
 import images from "../../utils/images";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import "./header.css";
 
 const menuItems = [
-  "news", "club", "team", "matches", "multimedia"
+  { menuItem: "news" },
+  { menuItem: "club", subItem1: { item: "history", path: "/history" } },
+  {
+    menuItem: "team",
+    subItem1: { item: "main team", path: "/team" },
+    subItem2: { item: "stuff", path: "/stuff" },
+  },
+  {
+    menuItem: "matches",
+    subItem1: { item: "all matches", path: "/matches" },
+    subItem2: { item: "table", path: "/table" },
+  },
+  {
+    menuItem: "multimedia",
+    subItem1: { item: "photos", path: "/photos" },
+    subItem2: { item: "videos", path: "/videos" },
+  },
 ];
 
 const Header = () => {
@@ -41,22 +58,36 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="header-wrapper">
-          <a href=""><img src={images.logo} alt="logo" className="logo" /></a>
+          <a href="">
+            <img src={images.logo} alt="logo" className="logo" />
+          </a>
           <div className="header-content">
             <div className="header-top-row">
               <div className="header-top-row-left-block">
-                <a className="messanger"><img src={images.facebook} alt="facebook" /></a>
-                <a className="messanger"><img src={images.instagram} alt="instagram" /></a>
-                <a className="messanger"><img src={images.youtube} alt="youtube" /></a>
-                <a className="messanger"><img src={images.tikTok} alt="tiktok" /></a>
-                <a className="messanger"><img src={images.twitter} alt="twitter" /></a>
+                <a className="messanger">
+                  <img src={images.facebook} alt="facebook" />
+                </a>
+                <a className="messanger">
+                  <img src={images.instagram} alt="instagram" />
+                </a>
+                <a className="messanger">
+                  <img src={images.youtube} alt="youtube" />
+                </a>
+                <a className="messanger">
+                  <img src={images.tikTok} alt="tiktok" />
+                </a>
+                <a className="messanger">
+                  <img src={images.twitter} alt="twitter" />
+                </a>
               </div>
               <div className="header-top-row-center-block">
-                <p>{t('slogan')}</p>
+                <p>{t("slogan")}</p>
               </div>
               <div className="header-top-row-right-block">
                 <div className="partner-logo">
-                  <a><img src={images.puma} alt="Puma" /></a>
+                  <a>
+                    <img src={images.puma} alt="Puma" />
+                  </a>
                 </div>
 
                 <div className="lang-switch">
@@ -76,7 +107,6 @@ const Header = () => {
                     </ul>
                   </div>
                 </div>
-
               </div>
             </div>
             <div className="header-bottom-row">
@@ -85,20 +115,14 @@ const Header = () => {
                   {menuItems.map((item, index) => (
                     <li key={index} className="menu-item">
                       <a className="category">{t(item)}</a>
-                      <div className="dropdown">
-                        <ul>
-                          <li><a href="#">{t('subItem')} 1</a></li>
-                          <li><a href="#">{t('subItem')} 2</a></li>
-                          <li><a href="#">{t('subItem')} 3</a></li>
-                        </ul>
-                      </div>
+                      {/* <DropDown array={menuItems}/> */}
                     </li>
                   ))}
                 </ul>
               </div>
               <div className="search-tickets">
                 <div className="tickets">
-                  <a>{t('tickets')}</a>
+                  <a>{t("tickets")}</a>
                 </div>
               </div>
             </div>

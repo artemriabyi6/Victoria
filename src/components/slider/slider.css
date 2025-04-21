@@ -6,8 +6,8 @@
     overflow: hidden;
     height: 800px;
   }
-  .slider-image {
-    transition: 0.3s ease-in-out;
+  .slider-image .active-img{
+    transition:  1s ease-in-out;
   }
   
   .slider-image img {
@@ -16,7 +16,10 @@
     display: block;
     border-radius: 4px;
    
+    transition: opacity 1s ease-in-out;
   }
+
+  
   
   .slider-btn {
     position: absolute;
@@ -68,4 +71,11 @@
     transform: translateY(-3px); /* Змістити трохи вліво */
   }
   
-  
+  /* Додано лише це — без змін існуючих стилів */
+.slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
