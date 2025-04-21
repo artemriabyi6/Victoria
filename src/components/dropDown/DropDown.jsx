@@ -7,9 +7,9 @@ const DropDown = ( {array} ) => {
         <>
         <div className="dropdown">
                         <ul>
-                          {array.map((item, index) => (
-                            <li key={item + index}><Link to='/Calendar'>{item}</Link></li>
-                          ))}
+                             {array.map((obj, index) => (
+                              <li key={index}><Link to={obj.path}>{obj.item}</Link></li>
+                             ))}
                         </ul>
         </div>
        

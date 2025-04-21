@@ -2,25 +2,26 @@ import { useState } from "react";
 import DropDown from "../dropDown/DropDown";
 import images from "../../utils/images";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const menuItems = [
-  { menuItem: "news" },
-  { menuItem: "club", subItem1: { item: "history", path: "/history" } },
+  // { menuItem: "news" },
+
+  { menuItem: "club", 
+    subItems: [{ item: "history", path: "/history" }] 
+  },
   {
     menuItem: "team",
-    subItem1: { item: "main team", path: "/team" },
-    subItem2: { item: "stuff", path: "/stuff" },
+    subItems : [{ item: "main team", path: "/team" }, { item: "stuff", path: "/stuff" }]
   },
   {
     menuItem: "matches",
-    subItem1: { item: "all matches", path: "/matches" },
-    subItem2: { item: "table", path: "/table" },
+    subItems: [{ item: "matches", path: "/calendar"}, { item: "table", path: "/table" }],
   },
   {
     menuItem: "multimedia",
-    subItem1: { item: "photos", path: "/photos" },
-    subItem2: { item: "videos", path: "/videos" },
+    subItems: [{ item: "photos", path: "/photos" }, { item: "videos", path: "/videos" }],
   },
 ];
 
@@ -58,9 +59,9 @@ const Header = () => {
     <header>
       <div className="container">
         <div className="header-wrapper">
-          <a href="">
+          <Link to='/'>
             <img src={images.logo} alt="logo" className="logo" />
-          </a>
+          </Link>
           <div className="header-content">
             <div className="header-top-row">
               <div className="header-top-row-left-block">
@@ -114,8 +115,8 @@ const Header = () => {
                 <ul>
                   {menuItems.map((item, index) => (
                     <li key={index} className="menu-item">
-                      <a className="category">{t(item)}</a>
-                      {/* <DropDown array={menuItems}/> */}
+                      <a className="category">{t(item.menuItem)}</a>
+                       <DropDown array={item.subItems}/> 
                     </li>
                   ))}
                 </ul>
