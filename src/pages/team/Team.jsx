@@ -15,6 +15,11 @@ export const team = [
     number: '29',
     img: images.player,
     id: 1,
+    citizenship: `Україна`,
+    age: '23',
+    birthday: '04.08.2001',
+    height: '181 см',
+    weight: '74 кг'
   },
   {
     name: 'Максим Бойко',
@@ -22,6 +27,11 @@ export const team = [
     number: '18',
     img: images.player,
     id: 2,
+    citizenship: `Україна`,
+    age: '23',
+    birthday: '04.08.2001',
+    height: '181 см',
+    weight: '74 кг'
   },
   {
     name: 'Олександр Лебеденко',
@@ -29,6 +39,11 @@ export const team = [
     number: '11',
     img: images.player,
     id: 3,
+    citizenship: `Україна`,
+    age: '23',
+    birthday: '04.08.2001',
+    height: '181 см',
+    weight: '74 кг'
   },
   {
     name: 'Данило Книш',
@@ -36,6 +51,11 @@ export const team = [
     number: '10',
     img: images.player,
     id: 4,
+    citizenship: `Україна`,
+    age: '23',
+    birthday: '04.08.2001',
+    height: '181 см',
+    weight: '74 кг'
   }
 ]
 
