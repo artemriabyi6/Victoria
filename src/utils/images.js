@@ -18,6 +18,9 @@ import next  from '../assets/images/arrow-next.svg'
 import gallery from '../assets/images/gallery.svg'
 import leagueLogo from '../assets/images/1 ліга.png'
 import player from '../assets/images/player.png'
+import ukrainianCup from '../assets/images/Ukrainian cup.png'
+import uplCup from '../assets/images/upl cup.png'
+import arturHistory from '../assets/images/artur-history.jpg'
 
  const images = {
     logo: logo,
@@ -39,7 +42,10 @@ import player from '../assets/images/player.png'
     en: en,
     gallery: gallery,
     leagueLogo: leagueLogo,
-    player: player
+    player: player,
+    uplCup: uplCup,
+    ukrainianCup: ukrainianCup,
+    arturHistory: arturHistory
 }
 
 export default images

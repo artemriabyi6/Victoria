@@ -9,19 +9,19 @@ const menuItems = [
   // { menuItem: "news" },
 
   { menuItem: "club", 
-    subItems: [{ item: "history", path: "/history" }] 
+    subItems: [{ item: "Історія", path: "/history" }] 
   },
   {
     menuItem: "team",
-    subItems : [{ item: "main team", path: "/team" }, { item: "stuff", path: "/stuff" }]
+    subItems : [{ item: "головна комнада", path: "/team" }, { item: "персонал", path: "/stuff" }]
   },
   {
     menuItem: "matches",
-    subItems: [{ item: "matches", path: "/calendar"}, { item: "table", path: "/table" }],
+    subItems: [{ item: "всі матчі", path: "/calendar"}, { item: "таблиця", path: "/table" }],
   },
   {
     menuItem: "multimedia",
-    subItems: [{ item: "photos", path: "/photos" }, { item: "videos", path: "/videos" }],
+    subItems: [{ item: "фото", path: "/photos" }, { item: "відео", path: "/videos" }],
   },
 ];
 

@@ -30,8 +30,34 @@
     display: block;
     z-index: 1000;
   }
+
+  .dropdown .dropdown-box {
+    display: flex;
+    justify-content: center;
+  }
   
   .menu-item:hover .dropdown ul {
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
+  }
+
+  .menu-item:hover .dropdown ul li {
+    margin-bottom: 7px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-item:hover .dropdown ul li:last-child {
+    margin-bottom: 0px;
+  }
+
+  .menu-item:hover .dropdown ul li a {
+    transition: 0.1s ease-in-out;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .menu-item:hover .dropdown ul li a:hover {
+    color: cornflowerblue;
   }
