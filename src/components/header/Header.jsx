@@ -6,14 +6,13 @@ import { Link } from "react-router-dom";
 import "./header.css";
 
 const menuItems = [
-  // { menuItem: "news" },
 
   { menuItem: "club", 
     subItems: [{ item: "Історія", path: "/history" }] 
   },
   {
     menuItem: "team",
-    subItems : [{ item: "головна комнада", path: "/team" }, { item: "персонал", path: "/stuff" }]
+    subItems : [{ item: "головна комнада", path: "/team" }, { item: "Тренерський штаб", path: "/stuff" }]
   },
   {
     menuItem: "matches",

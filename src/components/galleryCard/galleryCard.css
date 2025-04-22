@@ -1,0 +1,57 @@
+ .gallery-card {
+    padding: 10px;
+    width: 256px;
+    gap: 20px;
+    background-color: cornflowerblue;
+    height: 180px;
+    background-image: url(../../assets/images/slide2.jpg);
+    background-position: center;
+    transition: filter 0.3s ease;
+    position: relative;
+    border-radius: 2px;
+    cursor: pointer;
+    
+}
+
+.gallery-card:hover {
+    filter: brightness(0.7);
+}
+
+
+.gallery-card .icon-length {
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 70px;
+    transition: 0.3s;
+}
+
+.gallery-card .icon-length::before {
+   content: '';
+   background-image: url(../../assets/images/gallery.svg);
+   display: inline-block;
+   background-size: contain;
+   background-repeat: no-repeat;
+   width: 18px;
+   height: 18px;
+   margin-right: 10px;
+   position: relative;
+   cursor: pointer;
+   top: 3px;
+   transition: 0.2s ease-in-out;
+   filter: invert();
+}
+ .gallery-card .date {
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.gallery-card .gallery-description {
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}

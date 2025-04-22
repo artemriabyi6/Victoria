@@ -6,6 +6,66 @@ import  "./stuff.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import StuffCard from "../../components/stuffCard/StuffCard";
+
+export const stuff = [
+  {
+    name: 'Анатолій Безсметрний',
+    position: 'Головний тренер',
+    age: '56',
+    id: 25,
+    img: images.player,
+  },
+  {
+    name: 'Анатолій Безсметрний',
+    position: 'Головний тренер',
+    age: '56',
+    id: 25,
+    img: images.player,
+  },
+  {
+    name: 'Анатолій Безсметрний',
+    position: 'Головний тренер',
+    age: '56',
+    id: 25,
+    img: images.player,
+  },
+  {
+    name: 'Анатолій Безсметрний',
+    position: 'Головний тренер',
+    age: '56',
+    id: 25,
+    img: images.player,
+  },
+  {
+    name: 'Анатолій Безсметрний',
+    position: 'Головний тренер',
+    age: '56',
+    id: 25,
+    img: images.player,
+  },
+  {
+    name: 'Анатолій Безсметрний',
+    position: 'Головний тренер',
+    age: '56',
+    id: 25,
+    img: images.player,
+  },
+  {
+    name: 'Анатолій Безсметрний',
+    position: 'Головний тренер',
+    age: '56',
+    id: 25,
+    img: images.player,
+  },
+  {
+    name: 'Анатолій Безсметрний',
+    position: 'Головний тренер',
+    age: '56',
+    id: 25,
+    img: images.player,
+  }
+] 
 
 const Stuff = () => {
   useEffect(() => {
@@ -21,44 +81,21 @@ const Stuff = () => {
         <div className="container">
           <h1>Тренерський штаб</h1>
           <div className="stuff-page-stuff-box" data-aos="fade-up">
-          <div className="stuff-page-positions goalkeeper" data-aos="fade-up">
+          <div className="stuff-page-positions" data-aos="fade-up">
               <h2>Тренерський склад</h2>
               <div className="stuff-page-player-cards" data-aos="fade-up">
-                <div className="stuff-page-player-card">
-                  <div>
-                    <h3>Олександр Литвиненко</h3>
-                    <p>Воротар</p>
-                  </div>
-                  <p className="player-number">1</p>
-                </div>
-                <div className="stuff-page-player-card">
-                  <div>
-                    <h3>Олександр Литвиненко</h3>
-                    <p>Воротар</p>
-                  </div>
-                  <p className="player-number">1</p>
-                </div>
+                  {stuff.map((item) => (
+                    <StuffCard key={item.id} name={item.name} img={item.img} position={item.position} id={item.id} data-aos="fade-up"/>
+                  ))}          
                 
               </div>
             </div>
-            <div className="stuff-page-positions goalkeeper" data-aos="fade-up">
+            <div className="stuff-page-positions " data-aos="fade-up">
               <h2>Адміністративний склад</h2>
               <div className="stuff-page-player-cards">
-                <div className="stuff-page-player-card">
-                  <div>
-                    <h3>Олександр Литвиненко</h3>
-                    <p>Воротар</p>
-                  </div>
-                  <p className="player-number">1</p>
-                </div>
-                <div className="stuff-page-player-card">
-                  <div>
-                    <h3>Олександр Литвиненко</h3>
-                    <p>Воротар</p>
-                  </div>
-                  <p className="player-number">1</p>
-                </div>
-                
+              {stuff.map((item) => (
+                    <StuffCard key={item.id} name={item.name} img={item.img} position={item.position} id={item.id}/>
+                  ))}         
               </div>
             </div>
           </div>

@@ -1,11 +1,18 @@
 .history-section {
     position: relative;
-    padding-top: 60px;
+    padding-top: 80px;
     background: linear-gradient(90deg, #0B0B0C -0.05%, #6E6E78 100.03%);
     max-width: 1408px;
     margin: auto;
     height: 240px;
     margin-top: 60px;
+}
+
+.history-section .container h1 {
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
 }
 
 
