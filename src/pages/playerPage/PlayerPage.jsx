@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { team } from "../team/Team";
+import { stuff } from '../stuff/Stuff';
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import './playerPage.css'
@@ -21,7 +22,7 @@ const PlayerPage = () => {
 
 
     const { id } = useParams()
-    const player = team.find(p => p.id === parseInt(id))
+    const player = id >= 25 ? stuff.find(p => p.id === parseInt(id)) :team.find(p => p.id === parseInt(id))
 
     if(!player) {
         return <div>Undefined player...</div>

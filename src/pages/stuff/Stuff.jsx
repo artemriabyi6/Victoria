@@ -14,6 +14,10 @@ export const stuff = [
     position: 'Головний тренер',
     age: '56',
     id: 25,
+    citizenship: `Україна`,
+    birthday: '17.03.1969',
+    height: '185 см',
+    weight: '80 кг',
     img: images.player,
   },
   {

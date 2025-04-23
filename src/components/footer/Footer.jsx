@@ -1,4 +1,5 @@
 import images from "../../utils/images";
+import { Link } from "react-router-dom";
 import './footer.css'
 import { useEffect } from "react";
 import AOS from "aos";
@@ -44,31 +45,31 @@ const Footer = () => {
             </div>
             <div className="bottom-row" data-aos="fade-up">
                     <ul>
-                        <li ><a href="" className="chapter">Meню</a></li>
-                        <li><a href="">Новини</a></li>
-                        <li><a href="">Фото галереї</a></li>
-                        <li><a href="">Відео</a></li>
-                        <li><a href="">Квитки</a></li>
+                        <li ><Link className="chapter">Meню</Link></li>
+                        {/* <li><a href="">Новини</a></li> */}
+                        <li><Link to="/photos">Фото галереї</Link></li>
+                        <li><Link to="/photos">Відео</Link></li>
+                        {/* <li><a href="">Квитки</a></li> */}
                     </ul>
                     <ul>
-                        <li ><a href="" className="chapter">Клуб</a></li>
-                        <li><a href="">Керівництво</a></li>
-                        <li><a href="">Історія</a></li>
-                        <li><a href="">Символіка</a></li>
-                        <li><a href="">Стадіон</a></li>
-                        <li><a href="">Контакти</a></li>
+                        <li ><Link  className="chapter">Клуб</Link></li>
+                        {/* <li><a href="">Керівництво</a></li> */}
+                        <li><Link to='/history'>Історія</Link></li>
+                        {/* <li><a href="">Символіка</a></li> */}
+                        {/* <li><a href="">Стадіон</a></li> */}
+                        {/* <li><a href="">Контакти</a></li> */}
                     </ul>
                     <ul>
-                        <li ><a href="" className="chapter">Команда</a></li>
-                        <li><a href="">Головна команда</a></li>
-                        <li><a href="">Тренерський штаб</a></li>
+                        <li ><Link href="" className="chapter">Команда</Link></li>
+                        <li><Link to="/team">Головна команда</Link></li>
+                        <li><Link to="/stuff">Тренерський штаб</Link></li>
                     </ul>
                     <ul>
-                        <li ><a href="" className="chapter">Матчі</a></li>
-                        <li><a href="">Всі матчі</a></li>
-                        <li><a href="">Турнірна таблиця Першої ліги</a></li>
-                        <li><a href="">Новини</a></li>
-                        <li><a href="">Новини</a></li>
+                        <li ><Link  className="chapter">Матчі</Link></li>
+                        <li><Link to="/calendar">Всі матчі</Link></li>
+                        <li><Link to="/table">Турнірна таблиця Першої ліги</Link></li>
+                        {/* <li><a href="">Новини</a></li>
+                        <li><a href="">Новини</a></li> */}
                     </ul>
             </div>
             <div className="copyright">

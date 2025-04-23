@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './teamslider.css';
 import images from '../../utils/images';
 
@@ -146,14 +147,17 @@ const TeamSlider = () => {
       </button>
       <div className="team-slider-track" ref={sliderRef}>
         {players.map((player, index) => (
-          <div className="player-card" key={index}>
+            <div className="player-card" key={index} >
+               <Link  to='/player/1'>
             <img src={player.image} alt={player.name} className="player-img" />
             <div className="player-info">
               <h3>{player.name}</h3>
               <p className="position">{player.position}</p>
               <div className="number">{player.number}</div>
             </div>
+            </Link>
           </div>
+         
         ))}
       </div>
       <button

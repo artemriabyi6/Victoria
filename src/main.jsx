@@ -36,6 +36,10 @@ const router = createBrowserRouter([
     element: <PlayerPage/>
   },
   {
+    path: '/stuff/:id',
+    element: <PlayerPage/>
+  },
+  {
     path:'/history',
     element: <History/>
   },
