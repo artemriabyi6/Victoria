@@ -96,3 +96,92 @@
     background-color: cornflowerblue;
     color: white;
 }
+
+@media (max-width: 767px) {
+    .match-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 20px 10px;
+    }
+
+    .match-container .left-block {
+        position: relative;
+        right: 15px;
+    }
+
+    .match-container .left-block .icon-box {
+        position: absolute;
+        top: -7px;
+        right: 5px;
+    }
+    .match-container .left-block .competition-tour {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .match-container .central-block {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .match-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 20px 10px;
+    }
+
+    .match-container .left-block {
+        position: relative;
+        right: 10px;
+    }
+
+    .match-container .left-block .icon-box {
+        position: absolute;
+        top: -7px;
+        right: 5px;
+    }
+    .match-container .left-block .competition-tour {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .match-container .central-block {
+        margin-bottom: 30px;
+    }
+
+
+
+    .match-container .central-block .team-logo {
+        width: 44px;
+        height: 44px;
+    }
+
+    .match-container .central-block {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    } 
+
+    .match-container .central-block .team-block {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .match-container .central-block .team-block .team-name .big-text {
+        font-weight: 700;
+        line-height: 120%;
+        font-size: 16px;
+        font-family: "Arsenal"
+    }
+}

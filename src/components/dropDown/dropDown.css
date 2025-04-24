@@ -44,7 +44,7 @@
   .menu-item:hover .dropdown ul li {
     margin-bottom: 7px;
     width: 100%;
-    text-align: center;
+    
   }
 
   .menu-item:hover .dropdown ul li:last-child {

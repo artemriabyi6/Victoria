@@ -118,3 +118,16 @@
   .team-dot.active {
     background: cornflowerblue;
   }
+
+  @media (max-width: 767px) {
+    .team-slider-btn.left, .team-slider-btn.right {
+     display: none;
+    }
+
+    .team-slider-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 16px;
+      gap: 8px;
+    }
+  }

@@ -5,7 +5,6 @@
     max-width: 1408px;
     margin: auto;
     height: 240px;
-    margin-top: 60px;
 }
 
 .history-section .container h1 {
@@ -33,7 +32,8 @@
 
 .achivment-block-wrapper {
  display: flex;
- justify-content: space-between;   
+ justify-content: space-between;  
+ flex-wrap: wrap; 
 }
 
 .achivment-block .achivment-block-card {
@@ -72,7 +72,7 @@
 }
 
 .club-history {
-    margin-bottom: 110px;
+    margin-bottom: 140px;
 }
 
 .club-history h3 {
@@ -102,7 +102,7 @@
     transition: 0.3s ease-in-out;
 }
 .club-history-wrapper .club-history-card img:hover {
-   opacity: 0.8;
+   filter: brightness(0.7);
 }
 
 .club-history-wrapper .club-history-card .club-history-card-description {
@@ -117,4 +117,13 @@
 .club-history-wrapper .club-history-card .club-history-card-description .club-history-card-text {
     text-transform: uppercase;
     font-weight: 700;
+}
+
+@media (max-width: 600px) {
+    .achivment-block-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+       }
 }

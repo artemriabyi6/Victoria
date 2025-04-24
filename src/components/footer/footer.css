@@ -82,7 +82,7 @@ footer .container {
 } */
 
 .container .bottom-row {
-    padding-top: 50px;
+    padding: 30px 0px;
     border-bottom: 1px solid gray ;
     display: flex;
     justify-content: space-around;
@@ -90,6 +90,10 @@ footer .container {
 
 .container .bottom-row ul  li{
     margin-bottom: 20px;
+}
+
+.container .bottom-row ul  li:last-child {
+    margin-bottom: 0;
 }
 
 .container .bottom-row ul li .chapter {
@@ -123,4 +127,91 @@ footer .container {
 .container .copyright div {
     display: flex;
     gap: 40px;
+}
+
+@media (max-width:767px) {
+    footer {
+        position: relative;
+    }
+   footer .container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+    }
+    .container .top-row {
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+    .container .top-row .logo-partner .logo {
+        position: absolute;
+        top: -147px;
+        right: 43%;
+    }
+
+    .container .copyright div {
+        display: flex;
+        gap: 10px;
+    }
+
+    .footer-accordion {
+        margin-bottom: 12px;
+      }
+      
+      .footer-accordion-title {
+        font-weight: bold;
+        cursor: pointer;
+        padding: 8px 0;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 500;
+        transition: 0.3s ease-in-out;
+      }
+      
+      .footer-submenu {
+        
+   
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease;
+      }
+      
+      .footer-submenu.open {
+        max-height: 300px; /* достатньо для відображення пунктів */
+      }
+}
+
+@media (max-width:600px) {
+
+    .container .top-row .logo-partner .logo {
+        position: absolute;
+        top: -147px;
+        right: 40%;
+    }
+}
+
+
+@media (max-width:470px) {
+    
+
+    .container .top-row .logo-partner .logo {
+        position: absolute;
+        top: -147px;
+        right: 37%;
+    }
+
+  
+}
+
+@media (max-width:370px) {
+    
+
+    .container .top-row .logo-partner .logo {
+        position: absolute;
+        top: -147px;
+        right: 34%;
+    }
+
+  
 }

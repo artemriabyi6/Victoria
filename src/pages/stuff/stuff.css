@@ -27,6 +27,7 @@ header {
    margin-bottom: 60px;
    position: absolute;
    top: -9%;
+   z-index: 0;
 }
 
 .stuff-page-stuff-box {
@@ -58,4 +59,24 @@ header {
 
 footer {
     margin-top: 60px;
+}
+
+
+@media (max-width: 767px) {
+    .stuff-page-title-box {
+        margin-top: 0px;
+    }
+
+    .stuff-page-title-box h1 {
+        position: absolute;
+        top: -4.5%;
+    }
+}
+
+@media (max-width: 632px) {
+    .stuff-page-title-box h1 {
+        position: absolute;
+        top: -2.4%;
+        font-size: 32px;
+    }
 }

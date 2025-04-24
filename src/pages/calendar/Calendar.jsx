@@ -35,12 +35,18 @@ const Calendar = () => {
                     <div className="matches-box">
                     <div data-aos="fade-up"><MatchBox logo={images.logo} city={'Ужгород'} team={'Минай'} date={'19'} 
                                                       time={'13:30'} competiton={images.leagueLogo} tour={'14'} /></div>
-                    <div data-aos="fade-up"><MatchBox /></div>
-                    <div data-aos="fade-up"><MatchBox /></div>
-                    <div data-aos="fade-up"><MatchBox /></div>
-                    <div data-aos="fade-up"><MatchBox /></div>
-                    <div data-aos="fade-up"><MatchBox /></div>
-                    <div data-aos="fade-up"><MatchBox /></div>
+                  <div data-aos="fade-up"><MatchBox logo={images.logo} city={'Ужгород'} team={'Минай'} date={'19'} 
+                                                      time={'13:30'} competiton={images.leagueLogo} tour={'14'} /></div>
+                  <div data-aos="fade-up"><MatchBox logo={images.logo} city={'Ужгород'} team={'Минай'} date={'19'} 
+                                                      time={'13:30'} competiton={images.leagueLogo} tour={'14'} /></div>
+                   <div data-aos="fade-up"><MatchBox logo={images.logo} city={'Ужгород'} team={'Минай'} date={'19'} 
+                                                      time={'13:30'} competiton={images.leagueLogo} tour={'14'} /></div>
+                   <div data-aos="fade-up"><MatchBox logo={images.logo} city={'Ужгород'} team={'Минай'} date={'19'} 
+                                                      time={'13:30'} competiton={images.leagueLogo} tour={'14'} /></div>
+                    <div data-aos="fade-up"><MatchBox logo={images.logo} city={'Ужгород'} team={'Минай'} date={'19'} 
+                                                      time={'13:30'} competiton={images.leagueLogo} tour={'14'} /></div>
+                   <div data-aos="fade-up"><MatchBox logo={images.logo} city={'Ужгород'} team={'Минай'} date={'19'} 
+                                                      time={'13:30'} competiton={images.leagueLogo} tour={'14'} /></div>
                     </div>
 
                 </div>

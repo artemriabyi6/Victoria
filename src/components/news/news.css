@@ -59,7 +59,6 @@
     width: 378px;
     height: 220px;
     overflow: hidden;
-   
 }
 
 .news-cards-box .regular-card-box .regular-card-description {
@@ -89,3 +88,69 @@
 .news-cards-box .regular-card img:hover, .news-cards-box .big-card img:hover {
     scale: 1.2;
 }
+
+@media (max-width: 767px) {
+    .news-cards-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px 0px;
+    }
+    .news-cards-box .regular-card-box {
+        width: 80%;
+        height: 220px;
+        cursor: pointer;
+        margin-bottom: 70px;
+        position: relative;
+    }
+
+    .news-cards-box .regular-card {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 550px) {
+    .news-cards-box {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px 0px;
+    }
+    .news-cards-box .regular-card-box {
+        width: 80%;
+        height: 220px;
+        cursor: pointer;
+        margin-bottom: 70px;
+        position: relative;
+    }
+
+    .news-cards-box .regular-card {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+    }
+    .news-cards-box .regular-card-box .regular-card-description {
+        width: 90%;
+        background-color: white;
+        position: absolute;
+        bottom: -25%;
+        padding: 10px;
+        left: 19px;
+        z-index: 100;
+    }
+}
+
+
+   
+
+
+@media (max-width: 430px) {
+    .news-cards-box .regular-card-box .regular-card-description {
+        width: 90%;
+        background-color: white;
+        position: absolute;
+        bottom: -16%;
+        left: 14px;
+        z-index: 100;
+    }
+} 

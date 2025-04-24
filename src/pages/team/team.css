@@ -1,5 +1,5 @@
 header {
-    /* margin-bottom: 60px; */
+    
 }
 
 .team-page-title-box::before {
@@ -54,12 +54,26 @@ header {
     gap: 30px 0px;
 }
 
-/* .team-page-team-box .team-page-positions .team-page-player-cards .team-page-player-card {
-    border: 1px solid cornflowerblue;
-    width: 280px;
-    height: 326px;
-    padding: 20px 10px;
-} */
+
 footer {
     margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+    .team-page-title-box {
+        margin-top: 0px;
+    }
+
+    .team-page-title-box h1 {
+        position: absolute;
+        top: -4.5%;
+    }
+}
+
+@media (max-width: 634px) {
+    .team-page-title-box h1 {
+        position: absolute;
+        top: -2.4%;
+        font-size: 32px;
+    }
 }

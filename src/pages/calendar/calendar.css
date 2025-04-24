@@ -35,3 +35,15 @@
     flex-direction: column;
     gap: 8px;
 }
+
+
+@media (max-width: 767px) {
+    .calendar {
+        margin-bottom: 80px;
+        margin-top: 0px;
+    }
+
+    .calendar .container .title-match {
+        margin-bottom: 20px;
+    }
+}

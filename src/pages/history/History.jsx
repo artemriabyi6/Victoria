@@ -29,28 +29,28 @@ useEffect(() => {
                 
                      <h2>Досягнення</h2>
                      <div className="achivment-block-wrapper">
-                     <div className="achivment-block-card">
+                     <div className="achivment-block-card"  data-aos="fade-up">
                           <div className="achivment-block-card-img-box">
                             <img src={images.uplCup} alt="Cup" />
                           </div> 
                           <h4 className="achivment-name">Кубок Аматорів</h4> 
                           <p className="achivment-year">Чемпіон 2020</p>
                     </div>
-                    <div className="achivment-block-card">
+                    <div className="achivment-block-card"  data-aos="fade-up">
                           <div className="achivment-block-card-img-box">
                             <img src={images.uplCup} alt="Cup" />
                           </div> 
                           <h4 className="achivment-name">Кубок Аматорів</h4> 
                           <p className="achivment-year">Чемпіон 2020</p>
                     </div>
-                    <div className="achivment-block-card">
+                    <div className="achivment-block-card"  data-aos="fade-up">
                           <div className="achivment-block-card-img-box">
                             <img src={images.uplCup} alt="Cup" />
                           </div> 
                           <h4 className="achivment-name">Кубок Аматорів</h4> 
                           <p className="achivment-year">Чемпіон 2020</p>
                     </div>
-                    <div className="achivment-block-card">
+                    <div className="achivment-block-card"  data-aos="fade-up">
                           <div className="achivment-block-card-img-box">
                             <img src={images.uplCup} alt="Cup" />
                           </div> 

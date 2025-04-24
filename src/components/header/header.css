@@ -291,3 +291,115 @@ header {
     display: flex;
     gap: 5px;
   }
+
+  @media (max-width: 767px) {
+    .container .header-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .header-wrapper .logo-block {
+      width: 60px;
+      height: 60px;
+    }
+
+    .header-wrapper .logo-block img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .header-wrapper .header-wrapper-right-block {
+      display: flex;
+      align-items: center;
+      gap: 0 20px;
+    }
+
+    .header-wrapper .header-wrapper-right-block .partner-logo {
+      width: 40px;
+      height: 40px;
+    }
+    .header-wrapper .header-wrapper-right-block .partner-logo img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    } 
+
+    .burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 20px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    
+    .burger span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background-color: #000;
+      border-radius: 2px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .burger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .burger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .burger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    .menu {
+      position: fixed;
+      width: 100%;
+      max-width: 296px;
+      height: calc(-56px + 100dvh);
+      z-index: 9999;
+      top: 89px;
+      right: 0;
+      transform: translateX(300%);
+      transition: 0.5s ease;
+      background-color: white;
+      margin-left: auto;
+      overflow: auto;
+      padding: 24px 16px;
+    }
+    .menu.active {
+      transform: translateX(0%);
+    }
+
+    .accordion-header {
+      font-weight: bold;
+      padding: 12px 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .accordion-submenu {
+      margin-left: 16px;
+      padding: 8px 0;
+    }
+    
+    .accordion-submenu li {
+      margin-bottom: 6px;
+    }
+    
+    .arrow {
+      font-size: 12px;
+      transition: transform 0.3s ease;
+    }
+    
+    .arrow.open {
+      transform: rotate(180deg);
+    }
+
+    
+  }
