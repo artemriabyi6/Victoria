@@ -293,14 +293,22 @@ header {
   }
 
   @media (max-width: 767px) {
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background-color: white;
+    }
+
     .container .header-wrapper {
       display: flex;
       justify-content: space-between;
     }
 
     .header-wrapper .logo-block {
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
     }
 
     .header-wrapper .logo-block img {
@@ -361,7 +369,7 @@ header {
       max-width: 296px;
       height: calc(-56px + 100dvh);
       z-index: 9999;
-      top: 89px;
+      top: 70px;
       right: 0;
       transform: translateX(300%);
       transition: 0.5s ease;
