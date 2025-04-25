@@ -155,18 +155,26 @@ footer .container {
     }
 
     .footer-accordion {
+        text-align: center;
+        padding: 10px;
         margin-bottom: 12px;
+        border-bottom: 1px solid gray;
+      }
+
+      .footer-accordion:last-child {
+        border-bottom: none;
       }
       
       .footer-accordion-title {
+        margin-bottom: 15px;
         font-weight: bold;
         cursor: pointer;
-        padding: 8px 0;
+        /* padding: 8px 0; */
         text-transform: uppercase;
         color: #FFFFFF;
         font-size: 14px;
         font-weight: 500;
-        transition: 0.3s ease-in-out;
+        /* transition: 0.3s ease-in-out; */
       }
       
       .footer-submenu {
@@ -179,6 +187,11 @@ footer .container {
       
       .footer-submenu.open {
         max-height: 300px; /* достатньо для відображення пунктів */
+      }
+
+      .container .bottom-row {
+        flex-direction: column;
+        padding: 10px 0 0 0;
       }
 }
 

@@ -113,18 +113,13 @@ const Footer = () => {
                 <div className="bottom-row" data-aos="fade-up">
                         <ul>
                             <li ><Link className="chapter">Meню</Link></li>
-                            {/* <li><a href="">Новини</a></li> */}
                             <li><Link to="/photos">Фото галереї</Link></li>
                             <li><Link to="/photos">Відео</Link></li>
-                            {/* <li><a href="">Квитки</a></li> */}
                         </ul>
                         <ul>
                             <li ><Link  className="chapter">Клуб</Link></li>
-                            {/* <li><a href="">Керівництво</a></li> */}
                             <li><Link to='/history'>Історія</Link></li>
-                            {/* <li><a href="">Символіка</a></li> */}
-                            {/* <li><a href="">Стадіон</a></li> */}
-                            {/* <li><a href="">Контакти</a></li> */}
+                       
                         </ul>
                         <ul>
                             <li ><Link href="" className="chapter">Команда</Link></li>
@@ -135,8 +130,6 @@ const Footer = () => {
                             <li ><Link  className="chapter">Матчі</Link></li>
                             <li><Link to="/calendar">Всі матчі</Link></li>
                             <li><Link to="/table">Турнірна таблиця Першої ліги</Link></li>
-                            {/* <li><a href="">Новини</a></li>
-                            <li><a href="">Новини</a></li> */}
                         </ul>
                 </div>
                 <div className="copyright">
