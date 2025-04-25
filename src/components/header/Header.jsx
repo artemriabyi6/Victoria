@@ -96,11 +96,6 @@ const Header = () => {
               </Link>
             </div>
             <div className="header-wrapper-right-block">
-              {/* <div className="partner-logo">
-                <a>
-                  <img src={images.puma} alt="Puma" />
-                </a>
-              </div> */}
 
               <div className="lang-switch">
                 <div className="selected-lang">{renderFlag(selectedLang)}</div>

@@ -381,6 +381,7 @@ header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      transition: 0.3s ease;
     }
     
     .accordion-submenu {
@@ -390,6 +391,10 @@ header {
     
     .accordion-submenu li {
       margin-bottom: 6px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 11px;
+      
     }
     
     .arrow {

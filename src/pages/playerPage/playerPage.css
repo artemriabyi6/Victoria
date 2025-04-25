@@ -93,6 +93,9 @@
         bottom: -255px;
         right: 15%;
     }
+    .player-page-section h1 {
+        font-size: 44px;
+    }
 
     .player-page-info {
         background-color: white;
