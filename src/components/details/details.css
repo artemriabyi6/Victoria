@@ -72,7 +72,7 @@ h2 {
         }
 
         .event-info .event-left-block, .event-info .event-right-block {
-            width: 55%;
-            height: 55%;
+            width: 20%;
+            height: 20%;
         }
 }
