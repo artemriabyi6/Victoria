@@ -4,6 +4,7 @@ import DropDown from "../dropDown/DropDown";
 import images from "../../utils/images";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import MobileHeader from "../mobile components/header/MobileHeader";
 import "./header.css";
 
 export const menuItems = [
@@ -33,24 +34,24 @@ export const menuItems = [
 
 const Header = () => {
   const [selectedLang, setSelectedLang] = useState("ua");
-  const [isOpen, setIsOpen] = useState(false);
-  const [openIndex, setOpenIndex] = useState(null);
+  // const [isOpen, setIsOpen] = useState(false);
+  // const [openIndex, setOpenIndex] = useState(null);
 
   const { t, i18n } = useTranslation();
 
 
-  useEffect(() => {
-    if (isOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+  // useEffect(() => {
+  //   if (isOpen) {
+  //     document.body.style.overflow = "hidden";
+  //   } else {
+  //     document.body.style.overflow = "auto";
+  //   }
   
-    // Очищення при розмонтажі
-    return () => {
-      document.body.style.overflow = "auto";
-    };
-  }, [isOpen]);
+  //   // Очищення при розмонтажі
+  //   return () => {
+  //     document.body.style.overflow = "auto";
+  //   };
+  // }, [isOpen]);
 
 
   const handleLangChange = (lang) => {
@@ -88,81 +89,82 @@ const Header = () => {
   return (
     <header>
       {isMobile ? (
-        <div className="container">
-          <div className="header-wrapper">
-            <div className="logo-block">
-              <Link to="/">
-                <img src={images.logo} alt="logo" className="logo" />
-              </Link>
-            </div>
-            <div className="header-wrapper-right-block">
+//         <div className="container">
+//           <div className="header-wrapper">
+//             <div className="logo-block">
+//               <Link to="/">
+//                 <img src={images.logo} alt="logo" className="logo" />
+//               </Link>
+//             </div>
+//             <div className="header-wrapper-right-block">
 
-              <div className="lang-switch">
-                <div className="selected-lang">{renderFlag(selectedLang)}</div>
-                <div className="lang-dropdown">
-                  <ul>
-                    <li onClick={() => handleLangChange("ua")}>
-                      <img src={images.ua} alt="UA" />
-                      UA
-                    </li>
-                    <li onClick={() => handleLangChange("en")}>
-                      <img src={images.en} alt="EN" />
-                      EN
-                    </li>
-                  </ul>
-                </div>
-              </div>
+//               <div className="lang-switch">
+//                 <div className="selected-lang">{renderFlag(selectedLang)}</div>
+//                 <div className="lang-dropdown">
+//                   <ul>
+//                     <li onClick={() => handleLangChange("ua")}>
+//                       <img src={images.ua} alt="UA" />
+//                       UA
+//                     </li>
+//                     <li onClick={() => handleLangChange("en")}>
+//                       <img src={images.en} alt="EN" />
+//                       EN
+//                     </li>
+//                   </ul>
+//                 </div>
+//               </div>
 
-              <div className={`burger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
+//               <div className={`burger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+//                 <span></span>
+//                 <span></span>
+//                 <span></span>
+//               </div>
+//             </div>
+//           </div>
 
-            {isOpen ? (
-               <div className="menu active">
-               <ul>
-               <ul>
-  {menuItems.map((item, index) => (
-    <li key={index}>
-      <div
-        className="accordion-header"
-        onClick={() => toggleAccordion(index)}
-      >
-        {t(item.menuItem)}
-        {item.subItems.length > 0 && (
-          <span className={`arrow ${openIndex === index ? "open" : ""}`}>▼</span>
-        )}
-      </div>
+//             {isOpen ? (
+//                <div className="menu active">
+//                <ul>
+//                <ul>
+//   {menuItems.map((item, index) => (
+//     <li key={index}>
+//       <div
+//         className="accordion-header"
+//         onClick={() => toggleAccordion(index)}
+//       >
+//         {t(item.menuItem)}
+//         {item.subItems.length > 0 && (
+//           <span className={`arrow ${openIndex === index ? "open" : ""}`}>▼</span>
+//         )}
+//       </div>
 
-      {openIndex === index && (
-        <ul className="accordion-submenu">
-          {item.subItems.map((sub, subIndex) => (
-            <li key={subIndex}>
-              <Link to={sub.path}>{sub.item}</Link>
-            </li>
-          ))}
-        </ul>
-      )}
-    </li>
-  ))}
-</ul>
+//       {openIndex === index && (
+//         <ul className="accordion-submenu">
+//           {item.subItems.map((sub, subIndex) => (
+//             <li key={subIndex}>
+//               <Link to={sub.path}>{sub.item}</Link>
+//             </li>
+//           ))}
+//         </ul>
+//       )}
+//     </li>
+//   ))}
+// </ul>
 
-               </ul>
-             </div>
-            ) : (
-              <div className="menu">
-              <ul>
-              {menuItems.map((item, index) => (
-                  <li key={index}><a href="">{item.menuItem}</a></li>
-                 ))}
-              </ul>
-            </div>
-            )}
+//                </ul>
+//              </div>
+//             ) : (
+//               <div className="menu">
+//               <ul>
+//               {menuItems.map((item, index) => (
+//                   <li key={index}><a href="">{item.menuItem}</a></li>
+//                  ))}
+//               </ul>
+//             </div>
+//             )}
          
-        </div>
+//         </div>
+          <MobileHeader/>
       ) : (
         <div className="container">
           <div className="header-wrapper">

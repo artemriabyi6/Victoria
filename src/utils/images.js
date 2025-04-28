@@ -21,6 +21,11 @@ import player from '../assets/images/player.png'
 import ukrainianCup from '../assets/images/Ukrainian cup.png'
 import uplCup from '../assets/images/upl cup.png'
 import arturHistory from '../assets/images/artur-history.jpg'
+import stacey from '../assets/images/stacey.jpg'
+import palamar from '../assets/images/palamar.jpg'
+import riabyiArtem from '../assets/images/riabyi-artem.jpg'
+import riabyiDenys from '../assets/images/riabyi-denys.jpg'
+
 
  const images = {
     logo: logo,
@@ -45,7 +50,13 @@ import arturHistory from '../assets/images/artur-history.jpg'
     player: player,
     uplCup: uplCup,
     ukrainianCup: ukrainianCup,
-    arturHistory: arturHistory
+    arturHistory: arturHistory,
+    players: {
+        stacey: stacey,
+        palamar: palamar,
+        riabyiArtem: riabyiArtem,
+        riabyiDenys: riabyiDenys
+    }
 }
 
 export default images

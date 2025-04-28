@@ -13,7 +13,7 @@ export const team = [
     name: 'Артем Рябий',
     position: 'Півзахисник',
     number: '29',
-    img: images.player,
+    img: images.players.riabyiArtem,
     id: 1,
     citizenship: `Україна`,
     age: '23',
