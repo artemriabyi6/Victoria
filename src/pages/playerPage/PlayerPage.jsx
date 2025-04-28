@@ -22,7 +22,7 @@ const PlayerPage = () => {
 
 
     const { id } = useParams()
-    const player = id >= 25 ? stuff.find(p => p.id === parseInt(id)) :team.find(p => p.id === parseInt(id))
+    const player = id >= 24 ? stuff.find(p => p.id === parseInt(id)) : team.find(p => p.id === parseInt(id))
 
     if(!player) {
         return <div>Undefined player...</div>
