@@ -52,7 +52,7 @@ const Header = () => {
 
   const handleLangChange = (lang) => {
     setSelectedLang(lang);
-    i18n.changeLanguage(lang);
+    i18n.changeLanguage(lang); 
   };
 
   const renderFlag = (lang) => {

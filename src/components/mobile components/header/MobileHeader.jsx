@@ -87,10 +87,10 @@ const MobileHeader = () => {
                 </div>
               </div>
 
-              <div className={`burger ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
-                <span></span>
-                <span></span>
-                <span></span>
+              <div  onClick={() => setIsOpen(!isOpen)} className="burger-block">
+                 <img className={`burger ${isOpen ? 'hidden' : 'visible'}`} src={images.burger} /> 
+                 <img className={`burger ${isOpen ? 'visible' : ' hidden'}`} src={images.cross}/> 
+               
               </div>
             </div>
           </div>
@@ -107,7 +107,7 @@ const MobileHeader = () => {
       >
         {t(item.menuItem)}
         {item.subItems.length > 0 && (
-          <span className={`arrow ${openIndex === index ? "open" : ""}`}>▼</span>
+          <img src={images.arrowDown} className={`arrow ${openIndex === index ? "open" : ""}`}/>
         )}
       </div>
 

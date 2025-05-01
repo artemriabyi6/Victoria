@@ -25,6 +25,9 @@ import stacey from '../assets/images/stacey.jpg'
 import palamar from '../assets/images/palamar.jpg'
 import riabyiArtem from '../assets/images/riabyi-artem.jpg'
 import riabyiDenys from '../assets/images/riabyi-denys.jpg'
+import cross from '../assets/images/cross.svg'
+import burger from '../assets/images/burger.svg'
+
 
 
  const images = {
@@ -51,6 +54,8 @@ import riabyiDenys from '../assets/images/riabyi-denys.jpg'
     uplCup: uplCup,
     ukrainianCup: ukrainianCup,
     arturHistory: arturHistory,
+    cross: cross,
+    burger: burger,
     players: {
         stacey: stacey,
         palamar: palamar,
