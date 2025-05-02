@@ -2,7 +2,7 @@ import './matchBox.css'
 import images from '../../utils/images';
 
 
-const MatchBox = ( { competiton, logo, tour, date , time, team, city} ) => {
+const MatchBox = ( { competiton, logo1, tour, date , time, team1, city1, city2, logo2, team2} ) => {
     return ( 
         <>
            <div className='match-container'>
@@ -18,11 +18,11 @@ const MatchBox = ( { competiton, logo, tour, date , time, team, city} ) => {
                 <div className='central-block'>
                         <div className='team-block left'>
                             <div className='team-name'>
-                                <h4 className='big-text'>{team}</h4>
-                                <p className='small-text'>{city}</p>
+                                <h4 className='big-text'>{team1}</h4>
+                                <p className='small-text'>{city1}</p>
                             </div>
                             <div className='team-logo'>
-                                <img src={images.logo} alt="" />
+                                <img src={logo1} alt="" />
                             </div>
                         </div>
 
@@ -34,11 +34,11 @@ const MatchBox = ( { competiton, logo, tour, date , time, team, city} ) => {
 
                         <div className='team-block right'>
                         <div className='team-logo'>
-                            <img src={logo} alt="" />
+                            <img src={logo2} alt="" />
                         </div>
                         <div className='team-name'>
-                            <h4 className='big-text'>Вікторія</h4>
-                            <p className='small-text'>Суми</p>
+                            <h4 className='big-text'>{team2}</h4>
+                            <p className='small-text'>{city2}</p>
                         </div>
                         </div>
                 </div>

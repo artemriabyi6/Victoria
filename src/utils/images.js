@@ -27,6 +27,11 @@ import riabyiArtem from '../assets/images/riabyi-artem.jpg'
 import riabyiDenys from '../assets/images/riabyi-denys.jpg'
 import cross from '../assets/images/cross.svg'
 import burger from '../assets/images/burger.svg'
+import bukovyna from '../assets/images/буковина.png'
+import prykarpatia from '../assets/images/прикарпаття.png'
+import nyva from '../assets/images/нива.png'
+import podillia from '../assets/images/поділля.png'
+import mynai from '../assets/images/минай.png'
 
 
 
@@ -61,6 +66,13 @@ import burger from '../assets/images/burger.svg'
         palamar: palamar,
         riabyiArtem: riabyiArtem,
         riabyiDenys: riabyiDenys
+    },
+    logos: {
+        prykarpatia: prykarpatia,
+        nyva: nyva,
+        mynai: mynai,
+        podillia: podillia,
+        bukovyna: bukovyna
     }
 }
 
