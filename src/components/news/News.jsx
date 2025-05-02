@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import './news.css'
 import images from '../../utils/images';
 import { useMediaQuery } from "react-responsive";
+import NewsCard from '../newsCard/NewsCard';
 
 const News = () => {
 
@@ -26,78 +27,14 @@ const News = () => {
                     <a href="">Переглянути всі новини</a>
                 </div>
                 <div className="news-cards-box" data-aos="fade-up">
-                <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
+                    <NewsCard img={images.slide1} date='08.04.2025' time='12:07' desc='Вікторія" - "Поділля": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.arturHistory} date='27.04.2025' time='11:23' desc='Вікторія" - "Нива Тернопіль": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide2} date='15.04.2025' time='16:23' desc='Вікторія" - "Прикарпаття": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide3} date='21.04.2025' time='18:41' desc='Вікторія" - "Минай": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide1} date='08.04.2025' time='12:07' desc='Вікторія" - "Поділля": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.arturHistory} date='27.04.2025' time='11:23' desc='Вікторія" - "Нива Тернопіль": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide3} date='21.04.2025' time='18:41' desc='Вікторія" - "Минай": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide1} date='08.04.2025' time='12:07' desc='Вікторія" - "Поділля": Cтатистика матчу' cardWidth={'regular'}/>
                 </div>
             </div>
             ) : (
@@ -107,78 +44,14 @@ const News = () => {
                     <a href="">Переглянути всі новини</a>
                 </div>
                 <div className="news-cards-box" data-aos="fade-up">
-                <div className="big-card-box" data-aos="fade-up">
-                        <div className='big-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='big-card-description'>
-                            <p className='date-time'>14.04.2025, 10:47</p>
-                            <p className='event'>{`"Вікторія" - "Прикарпаття" (Фото)`}</p>
-                        </div>
-                    </div>
-                    <div className="big-card-box" data-aos="fade-up">
-                        <div className='big-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='big-card-description'>
-                            <p className='date-time'>14.04.2025, 10:47</p>
-                            <p className='event'>{`"Вікторія" - "Прикарпаття" (Фото)`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
-                    <div className="regular-card-box" data-aos="fade-up">
-                        <div className='regular-card'>
-                        <img src={images.slide2} alt="" />
-                        </div>
-                        <div className='regular-card-description'>
-                        <p className='date-time'>15.04.2025, 16:23</p>
-                        <p className='event'>{`"Вікторія" - "Прикарпаття": Cтатистика матчу`}</p>
-                        </div>
-                    </div>
+                    <NewsCard img={images.slide1} date='08.04.2025' time='12:07' desc='Вікторія" - "Поділля": Cтатистика матчу' cardWidth={'big'}/>
+                    <NewsCard img={images.arturHistory} date='27.04.2025' time='11:23' desc='Вікторія" - "Нива Тернопіль": Cтатистика матчу' cardWidth={'big'}/>
+                    <NewsCard img={images.slide2} date='15.04.2025' time='16:23' desc='Вікторія" - "Прикарпаття": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide3} date='21.04.2025' time='18:41' desc='Вікторія" - "Минай": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide1} date='08.04.2025' time='12:07' desc='Вікторія" - "Поділля": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.arturHistory} date='27.04.2025' time='11:23' desc='Вікторія" - "Нива Тернопіль": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide3} date='21.04.2025' time='18:41' desc='Вікторія" - "Минай": Cтатистика матчу' cardWidth={'regular'}/>
+                    <NewsCard img={images.slide1} date='08.04.2025' time='12:07' desc='Вікторія" - "Поділля": Cтатистика матчу' cardWidth={'regular'}/>
                 </div>
             </div>
             )

@@ -20,19 +20,6 @@
     display: none; /* Chrome/Safari */
   }
   
-  .player-card {
-    flex: 0 0 250px;
-    scroll-snap-align: start;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
-  
-  .player-card:hover {
-    transform: translateY(-5px);
-  }
   
   .player-img {
     width: 100%;
@@ -64,6 +51,9 @@
     color: #d1d1d1;
     margin-top: 10px;
   }
+
+  
+
   
   .team-slider-btn {
     position: absolute;

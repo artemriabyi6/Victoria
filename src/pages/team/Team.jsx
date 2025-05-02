@@ -13,7 +13,7 @@ export const team = [
     name: 'Артем Рябий',
     position: 'Півзахисник',
     number: '29',
-    img: images.players.riabyiArtem,
+    img: images.player,
     id: 1,
     citizenship: `Україна`,
     age: '23',
@@ -58,7 +58,7 @@ export const team = [
     weight: '74 кг'
   },
   {
-    name: 'Микола Лебеденко',
+    name: 'Олександр Лебеденко',
     position: 'Півзахисник',
     number: '11',
     img: images.player,

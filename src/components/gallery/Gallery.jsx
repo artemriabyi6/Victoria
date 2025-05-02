@@ -1,6 +1,7 @@
 import './gallery.css'
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
+// import GalleryCard from '../galleryCard/GalleryCard';
 
 const Gallery = () => {
 
@@ -60,6 +61,7 @@ const Gallery = () => {
                         <p className="gallery-description">{`24 Тур "Вікторія" - "Прикарпаття"`}</p>
                         </Link>
                     </div>
+                    
             </div>
             
         </div>

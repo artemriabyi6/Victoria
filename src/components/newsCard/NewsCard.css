@@ -1,16 +1,4 @@
-.news-box {
-    display: flex;
-    justify-content: space-between;
-}
-
-.news-cards-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-/* .news-cards-box .big-card-box {
+.news-cards-box .big-card-box {
     width: 584px;
     cursor: pointer;
     height: 320px;
@@ -153,4 +141,4 @@
         left: 14px;
         z-index: 100;
     }
-}  */
+} 

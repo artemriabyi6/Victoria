@@ -1,76 +1,77 @@
 import { useRef, useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import './teamslider.css';
 import images from '../../utils/images';
+import { team } from '../../pages/team/Team';
+import CarouselCard from '../../components/carouselCard/CarouselCard'
 
-const players = [
-  {
-    name: 'Микита Турбаєвський',
-    position: 'Воротар',
-    number: 30,
-    image: images.slide2,
-  },
-  {
-    name: 'Дмитро Мацапура',
-    position: 'Воротар',
-    number: 53,
-    image: images.slide2,
-  },
-  {
-    name: 'Жуніньо',
-    position: 'Захисник',
-    number: 10,
-    image: images.slide2,
-  },
-  {
-    name: 'Габріель Ескінья',
-    position: 'Захисник',
-    number: 4,
-    image: images.slide2,
-  },
-  {
-    name: 'Роман Вантух',
-    position: 'Захисник',
-    number: 47,
-    image: images.slide2,
-  },
-  {
-    name: 'Роман Вантух',
-    position: 'Захисник',
-    number: 47,
-    image: images.slide2,
-  },
-  {
-    name: 'Роман Вантух',
-    position: 'Захисник',
-    number: 47,
-    image: images.slide2,
-  },
-  {
-    name: 'Роман Вантух',
-    position: 'Захисник',
-    number: 47,
-    image: images.slide2,
-  },
-  {
-    name: 'Роман Вантух',
-    position: 'Захисник',
-    number: 47,
-    image: images.slide2,
-  },
-  {
-    name: 'Роман Вантух',
-    position: 'Захисник',
-    number: 47,
-    image: images.slide2,
-  },
-  {
-    name: 'Роман Вантух',
-    position: 'Захисник',
-    number: 47,
-    image: images.slide2,
-  },
-];
+// const players = [
+//   {
+//     name: 'Микита Турбаєвський',
+//     position: 'Воротар',
+//     number: 30,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Дмитро Мацапура',
+//     position: 'Воротар',
+//     number: 53,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Жуніньо',
+//     position: 'Захисник',
+//     number: 10,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Габріель Ескінья',
+//     position: 'Захисник',
+//     number: 4,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Роман Вантух',
+//     position: 'Захисник',
+//     number: 47,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Роман Вантух',
+//     position: 'Захисник',
+//     number: 47,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Роман Вантух',
+//     position: 'Захисник',
+//     number: 47,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Роман Вантух',
+//     position: 'Захисник',
+//     number: 47,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Роман Вантух',
+//     position: 'Захисник',
+//     number: 47,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Роман Вантух',
+//     position: 'Захисник',
+//     number: 47,
+//     image: images.slide2,
+//   },
+//   {
+//     name: 'Роман Вантух',
+//     position: 'Захисник',
+//     number: 47,
+//     image: images.slide2,
+//   },
+// ];
 
 const slidesPerView = 5;
 
@@ -81,7 +82,7 @@ const TeamSlider = () => {
   const scroll = (direction) => {
     if (sliderRef.current) {
       const cardWidth = sliderRef.current.children[0].offsetWidth + 16;
-      const maxScrollIndex = players.length - slidesPerView;
+      const maxScrollIndex = team.length - slidesPerView;
 
       setActiveIndex((prevIndex) => {
         let newIndex = direction === 'left' ? prevIndex - 1 : prevIndex + 1;
@@ -122,7 +123,7 @@ const TeamSlider = () => {
       setActiveIndex((prevIndex) => {
         const nextIndex = prevIndex + 1;
   
-        if (nextIndex > players.length - slidesPerView) {
+        if (nextIndex > team.length - slidesPerView) {
           // Повертаємося на початок
           scrollToSlide(0);
           return 0;
@@ -131,7 +132,7 @@ const TeamSlider = () => {
           return nextIndex;
         }
       });
-    }, 3000); // кожні 5 секунд
+    }, 5000); // кожні 5 секунд
   
     return () => {
       slider.removeEventListener('scroll', handleScroll);
@@ -146,30 +147,28 @@ const TeamSlider = () => {
         &lt;
       </button>
       <div className="team-slider-track" ref={sliderRef}>
-        {players.map((player, index) => (
-            <div className="player-card" key={index} >
-               <Link  to='/player/1'>
-            <img src={player.image} alt={player.name} className="player-img" />
-            <div className="player-info">
-              <h3>{player.name}</h3>
-              <p className="position">{player.position}</p>
-              <div className="number">{player.number}</div>
-            </div>
-            </Link>
-          </div>
-         
+        {team.map((item,) => (
+           <CarouselCard
+           key={item.id}
+           position={item.position}
+           number={item.number}
+           id={item.id}
+           name={item.name}
+           img={item.img}
+           team={team}
+           />
         ))}
       </div>
       <button
         className="team-slider-btn right"
         onClick={() => scroll('right')}
-        disabled={activeIndex >= players.length - slidesPerView}
+        disabled={activeIndex >= team.length - slidesPerView}
       >
         &gt;
       </button>
 
       <div className="team-slider-dots">
-        {Array.from({ length: players.length - slidesPerView + 1 }).map((_, index) => (
+        {Array.from({ length: team.length - slidesPerView + 1 }).map((_, index) => (
           <span
             key={index}
             className={`team-dot ${index === activeIndex ? 'active' : ''}`}

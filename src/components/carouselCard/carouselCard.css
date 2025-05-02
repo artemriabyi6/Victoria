@@ -1,0 +1,67 @@
+.carousel-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    flex: 0 0 286px;
+    height: 326px;
+    position: relative;
+    background: repeating-linear-gradient(
+        60deg,
+        #f6f6f6,
+        #f6f6f6 40px,
+        #ffffff 40px,
+        #ffffff 80px
+      );
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.carousel-card:hover .number{
+    transform: translateY(-30px);
+}
+
+.carousel-card  .introduce {
+    margin-bottom: 40px;
+}
+
+.carousel-card  .introduce h4 {
+    font-weight: 700;
+    line-height: 120%;
+    font-size: 18px;
+    font-family: "Arsenal";
+    text-transform: uppercase;
+    text-align: center;
+    
+} 
+
+.carousel-card  .introduce p{
+    font-size: 16px;
+    opacity: 0.4;
+    text-align: center;
+}
+
+
+.carousel-card  .number {
+    font-size: 70px;
+    width: fit-content;
+    height: 140px;
+    font-weight: 700;
+    color: #B8BFC8;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.carousel-card .carousel-card-img-box {
+    width: 170px;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+
+.carousel-card .carousel-card-img-box img {
+    width: 100%;
+    height: 100%;
+}
